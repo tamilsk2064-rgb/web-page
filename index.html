@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS User Data Form</title>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <div class="container">
+      <div class="form-wrapper">
+        <h1 class="form-title">User Registration</h1>
+        <p class="form-subtitle">Please fill in your details below</p>
+
+        <form id="userForm" class="user-form">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              class="form-input"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="+1 (555) 000-0000"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input
+                type="number"
+                id="age"
+                name="age"
+                class="form-input"
+                min="1"
+                max="120"
+                placeholder="25"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country" class="form-input">
+              <option value="">Select your country</option>
+              <option value="us">United States</option>
+              <option value="uk">United Kingdom</option>
+              <option value="ca">Canada</option>
+              <option value="au">Australia</option>
+              <option value="de">Germany</option>
+              <option value="fr">France</option>
+              <option value="in">India</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-main">Gender</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="gender" value="male" />
+                <span>Male</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="female" />
+                <span>Female</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="gender" value="other" />
+                <span>Other</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label-main">Interests</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="sports" />
+                <span>Sports</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="music" />
+                <span>Music</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="reading" />
+                <span>Reading</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="interests" value="travel" />
+                <span>Travel</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="checkbox-label agreement">
+              <input type="checkbox" name="terms" required />
+              <span>I agree to the terms and conditions</span>
+            </label>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
